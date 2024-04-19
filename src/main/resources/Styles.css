@@ -1,0 +1,44 @@
+.root {
+    -fx-font-size: 12pt;
+    color: black;
+}
+
+
+/* メインHBoxのスタイル */
+.main-hbox {
+    -fx-alignment: CENTER; /* 要素を中央に寄せる */
+    -fx-spacing: 10; /* 要素間の間隔 */
+}
+.main-hbox {
+    -fx-padding: 5 50 5 50; /* 上 10, 右 20, 下 10, 左 20 のパディングを設定 */
+    -fx-alignment: CENTER; /* 中央揃え */
+    -fx-spacing: 10; /* 要素間の間隔 */
+}
+
+.button {
+    -fx-background-color: rgba(255, 255, 255, 0.639); /* 初期の背景色 */
+    -fx-background-radius: 30; /* ボタンの角を丸くするための半径 */
+    -fx-padding: 0 5 0 5; /* ボタンの内側の余白を設定 */
+    -fx-border-color: black; /* 境界線の色 */
+    -fx-border-width: 2; /* 境界線の太さ */
+    -fx-border-radius: 30; /* 境界線の角を丸くするための半径 */
+    -fx-font-weight: bold; /* フォントを太くする */
+    -fx-text-fill: black; /* テキストの色 */
+}
+
+.button:hover {
+    -fx-background-color: rgb(97, 97, 255); /* ホバー時の背景色を青に変更 */
+    -fx-text-fill: white; /* ホバー時のテキスト色を白に変更 */
+}
+.text-field {
+    -fx-padding: 5 10; /* 左右に10pxの余白を設定 */
+    -fx-pref-width: 600px;
+}
+.tab-pane {
+    -fx-tab-min-width: 100px; /* タブの最小幅 */
+    -fx-tab-max-width: 200px; /* タブの最大幅 */
+    -fx-tab-min-height: 30px; /* タブの最小高さ */
+    -fx-tab-max-height: 30px; /* タブの最大高さ */
+}
+
+

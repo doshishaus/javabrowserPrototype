@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserController">
+    <top>
+        <HBox styleClass="main-hbox">
+            <Button text="←" onAction="#handleGoBack" styleClass="button" /> <!-- 前に戻るボタン -->
+            <Button text="→" onAction="#handleGoForward" styleClass="button" /> <!-- 次に進むボタン -->
+            <Button text="⟳" onAction="#handleRefresh" styleClass="button" /> <!-- リフレッシュボタン -->
+            <Region HBox.hgrow="ALWAYS" /> <!-- URLバーと新しいタブボタンの間のスペース -->
+            <ProgressBar fx:id="progressBar" prefWidth="200" visible="false" />
+            <TextField fx:id="urlField" styleClass="text-field" /> <!-- URL入力バー -->
+            <Button text="🔍" onAction="#handleGo" styleClass="button" /> <!-- 実行ボタン -->
+            <Region HBox.hgrow="ALWAYS" /> <!-- URLバーと新しいタブボタンの間のスペース -->
+            <Button text="+" onAction="#handleNewTab" styleClass="button" />  <!-- 新しいタブを追加するボタン -->
+        </HBox>
+    </top>
+    
+    <center>
+        <TabPane fx:id="tabPane" VBox.vgrow="ALWAYS" />  <!-- メインのTabPane -->
+    </center>
+</BorderPane>

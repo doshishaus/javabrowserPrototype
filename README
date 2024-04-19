@@ -1,0 +1,8 @@
+
+コンパイル
+javac --module-path ./javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml,javafx.web -d out src/main/java/*.java
+実行
+java --module-path ./javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml,javafx.web -cp out Main
+
+fxmlの実行環境への移動
+cp -r src/main/resources/* out/
